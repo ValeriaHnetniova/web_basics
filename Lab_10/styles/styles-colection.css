@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ecebeb;
+    padding: 5px 20px;
+}
+
+.nav-icons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-icons a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+ 
+.nav-icons a:visited {
+    color: black; /* Залишається чорним навіть після відвідування */
+}
+
+.nav-icons a:hover{
+    color: #f5f5f5;
+}
+
+.logo{
+    text-align: center;
+    font-size: 70px;
+}
+
+.banner{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.banner img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.collection-section{
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.collection-section h2{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.collection-section p{
+    width: 500px;
+    font-size: 18px;
+    color: black;
+    margin: 10px auto 30px;
+}
+
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    box-sizing: border-box;
+    flex: 1 1 calc(25% - 20px);
+    width: 200px;
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s; /*означає, що зміни, пов’язані з transform (наприклад, масштабування при наведенні), відбуватимуться поступово протягом 0.3 секунди.*/
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 355px;
+    height: 492px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.product-info h3, p{
+    font-weight: lighter;
+    color: black;
+    flex: 1;
+}
+
+.footer-content{
+    background-color: #ecebeb;
+    color: gray;
+    padding: 20px;
+    text-align: center;
+}

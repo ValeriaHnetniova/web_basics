@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VALRIN</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="/styles/styles-login.css"> 
+        <script>
+            function goBack() {
+              window.history.back()
+            }
+            </script>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="logo">VALRIN</h1>
+            <div class="nav-icons">
+                <a href="valrin.html"><i class="material-icons">home</i></a><br>
+                <a href="login.html"><i class="material-icons">person</i></a><br>
+                <a href="contacts.html"><i class="material-icons">book ribbon</i></a><br>
+            </div>            
+        </header>
+            <h3 class="era">NEW ERA OF YOU</h3>
+        <main class="form_signin">
+            <form>
+                <h1 class="sign_in">Please sign in</h1>
+                <div class="form_floating">
+                    <input type="email" class="form_control" id="floatingInput">
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form_floating">
+                    <input type="password" class="form_control" id="floatingPassword">
+                    <label for="floatingPassword">Password</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" class="form-checkboxinput" value="remember-me" id="flexcheckbox">
+                    <label for="flexcheckbox" class="form-checkboxlabel">I have read and understand the Privacy and Cookies Policy</label>
+                </div>
+                <button type="submit" class="button">Sign in</button>
+            </form>
+        </main>
+        <input type="button" value="back" onclick="goBack()" class="button_back">
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 all rights reserved</p>
+            </div>
+        </footer>
+    </body>
+</html>

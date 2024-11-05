@@ -35,6 +35,8 @@ body{
 .logo{
     text-align: center;
     font-size: 70px;
+    transition: transform 0.4s ease; /*зміни трансформації виконувались плавно протягом 0.4 секунд.*/
+    display: inline-block; /* Щоб можна було анімувати трансформації */
 }
 
 .era{
@@ -62,7 +64,6 @@ h3{
 }
 
 form {
-    width: 100%;
     max-width: 400px; /* Максимальна ширина форми */
     padding: 20px;
     text-align: center; /* Вирівнює текстові елементи по центру */
@@ -79,7 +80,7 @@ form {
 .form_control {
     width: 100%; /* Інпут займає всю доступну ширину */
     padding: 10px;
-    box-sizing: border-box;
+    box-sizing: border-box; /*При використанні box-sizing: border-box;, будь-які відступи та рамки входять у ширину і висоту елемента. Іншими словами, ширина і висота елемента більше не зростають від padding або border, бо вони вже включені в ці розміри.*/
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-bottom: 5px;
